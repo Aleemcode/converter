@@ -39,9 +39,10 @@
                 <h1 class="display-4 text-center mb-3">
                     Weight-converter
                 </h1>
+                <p class="text-center">from kg to (gram, milligram, pounds, and ounce)</p>
                 <form>
                     <div class="form-group">
-                        <input type="number" class="form-control form-control-lg" id="lbsInput" placeholder="Enter pounds..." required>
+                        <input type="number" class="form-control form-control-lg" id="lbsInput" placeholder="Enter kilograms..." required>
                     </div>
                 </form>
                 <div id="output">
@@ -52,10 +53,17 @@
                         </div>
                     </div>
 
+                    <div class="card bg-warning mb-2">
+                        <div class="card-block">
+                            <h4>Milligram:</h4>
+                            <div id="mgOutput"></div>
+                        </div>
+                    </div>
+
                     <div class="card bg-success mb-2">
                         <div class="card-block">
-                            <h4>Kilograms:</h4>
-                            <div id="kgOutput"></div>
+                            <h4>Pounds:</h4>
+                            <div id="poundsOutput"></div>
                         </div>
                     </div>
 

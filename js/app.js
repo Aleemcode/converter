@@ -1,3 +1,4 @@
+
 const input = document.getElementById('lbsInput');
 const output = document.getElementById('output');
 
@@ -5,17 +6,20 @@ output.style.visibility = 'hidden';
 
 input.addEventListener('input', (e) => {
     let lbs = e.target.value;
-
+    console.log(lbs);
     output.style.visibility = 'visible';
 
     let grams = document.getElementById('gOutput');
-    grams.innerHTML = lbs/0.0022046;
+    grams.innerHTML = lbs * 1000;
 
-    let kiloGrams = document.getElementById('kgOutput');
-    kiloGrams.innerHTML = lbs/2.2046;
+    let milGrams = document.getElementById('mgOutput');
+    milGrams.innerHTML = lbs * 1e+6;
+
+    let pounds = document.getElementById('poundsOutput');
+    pounds.innerHTML = lbs * 2.205;
 
     let ounces = document.getElementById('ozOutput');
-    ounces.innerHTML = lbs * 16;
+    ounces.innerHTML = lbs * 35.274;
 
     e.preventDefault();
 })
